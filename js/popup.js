@@ -185,7 +185,7 @@ $(document).ready(function () {
     configureCardPopup();
 
 
-var flickrLinkCSS = $("<link>", { rel: "stylesheet",type: "text/css", href: "./_css/flickr.css?v=20241213073534" });    
+var flickrLinkCSS = $("<link>", { rel: "stylesheet",type: "text/css", href: "./css/flickr.css?v=20241213073534" });    
     $("head").append(flickrLinkCSS);    
 
     if(screen.height <= 600){
