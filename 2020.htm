@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<link rel="stylesheet" href="_css/popup.css?v=20221218192009" />
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div class="card"></div>
+<div class="card_details"></div>
+<div class="card_media"></div>
+
+<script src="js/popup.js?2022121x20201215153423" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    var cardYear = 2020;
+    var cardImgURL = "https://live.staticflickr.com/65535/50722745647_41ce424a42_b.jpg";
+
+    var cardVerse =     "<p><blockquote style='font-family: monospace;font-size: 18px;line-height: 22px;font-weight: normal;color: #333;background-color: #eee;border-radius: 3px;padding: 25px 40px 40px;box-shadow: 0px 3px 8px rgba(0,0,0,0.5);margin-top: -5px;'>" + 
+    "<b>Luke 2:8-11</b><br/><small>King James Version</small><br/><br/>And there were in the same country shepherds abiding in the field, keeping watch over their flock by night. And, lo, the angel of the Lord came upon them, and the glory of the Lord shone round about them: and they were sore afraid. And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people. <br/><br/>For unto you is born this day in the city of David a Saviour, which is Christ the Lord." + 
+    "</blockquote>";
+
+    var cardNotes = "<p>Merry Christmas!</p>" +
+    "<p>My initial idea this year was to create an image of the Pilgrims during Christmas ... but after researching the topic <a href='https://www.plymouth400inc.org/did-the-pilgrims-celebrate-christmas/' target='_blank'>I found out</a> they didn't even celebrate Christmas (which is kind of cool) ... so there went that idea! Then I went into researching where the Christmas tree came from. That was also fascinating (see <a href='https://www.catholic.com/magazine/online-edition/st-boniface-and-the-christmas-tree' target='_blank'>Saint Boniface</a>, <a href='https://www.traditioninaction.org/religious/f031_Tree.htm' target='_blank'>Paradise Play/Germans</a>) - but no card image ideas came from that.</p>" + 
+    "<p>After researching a few other topics I eventually got interested in doing my own version of the popular 'angels and shepherds' scene from the New Testament's record of the birth of Jesus. On this note an interesting, additional trivia topic is what researchers think the 'star of Bethlehem' was. No one truly knows but some believe it may have been an <a href='https://www.joydigitalmag.com/burning-issues/the-star-of-bethlehem/' target='_blank'>exploding star (super nova)</a> which is pretty cool.</p>" + 
+    // "<p>This card is dedicated to ??</p>" + 
+    "<p>See below for sketches, related photos, etc.</p>";
+
+    /*
+    <br/><br/>For anyone who wants to print this card or get a larger version of it you can do that by <a href='https://fine artamerica.com/featured/christmas-shepherds-and-angel-emerson.html' target='_new'>clicking here</a>.
+    */
+
+//     var mediaItems = [    
+//     "https://live.staticflickr.com/65535/49159567002_51c33a4248_b.jpg;https://live.staticflickr.com/65535/49159567002_51c33a4248_q.jpg;Initial Sketch",
+//     "https://live.staticflickr.com/65535/49158318626_2b6094d8bd_b.jpg;https://live.staticflickr.com/65535/49158318626_2b6094d8bd_q.jpg;Color Sketch",    
+//     "https://live.staticflickr.com/65535/49158538882_842a14f4ae_o.jpg;https://live.staticflickr.com/65535/49158538882_15c2491c48_q.jpg;Photo 1",
+//     "https://live.staticflickr.com/65535/49158318731_83ded39a49_b.jpg;https://live.staticflickr.com/65535/49158318731_83ded39a49_q.jpg;Photo 2",    
+//     "https://live.staticflickr.com/65535/49158538902_86ea0c0cb0_b.jpg;https://live.staticflickr.com/65535/49158538902_86ea0c0cb0_q.jpg;Painting (Unknown)",    
+//     "https://live.staticflickr.com/65535/49158413782_7c20015f68_b.jpg;https://live.staticflickr.com/65535/49158413782_7c20015f68_q.jpg;Poem",
+// "https://live.staticflickr.com/65535/49190135962_048aedfc05_b.jpg;https://live.staticflickr.com/65535/49190135962_048aedfc05_q.jpg;File Info",
+//     "videos/2019.htm;images/vimeo.png;Time Lapse (30s)!",
+//     "videos/2019.19.htm;images/vimeo.png;Time Lapse (14m)!",
+//     "https://live.staticflickr.com/65535/49157705413_76e098bcbc_h.jpg;https://live.staticflickr.com/65535/49157705413_8b9dd048db_q.jpg;Main Image (Final Card)"
+//     ];
+
+  var mediaItems = [    
+    "https://live.staticflickr.com/65535/50722072398_b770435ae8_b.jpg;https://live.staticflickr.com/65535/50722072398_b770435ae8_m.jpg;References 1;I couldn't come up with a sketch idea in this direction but I researched a bit about the whole manger/barn thing. Contrary to common belief Jesus was born in more of a separate section of someone's house area than a 'barn with animals'.",
+    "https://live.staticflickr.com/65535/50722803581_58c14904ac_b.jpg;https://live.staticflickr.com/65535/50722803581_58c14904ac_m.jpg;References 2;I also did some research on the origins of the 'Christmas Tree'. Some very interesting stories here from first origination from a prop from a medeival play about the Garden of Eden, to a legend of a Catholic priest chopping down a pagan oak tree, to, the more likely, general, Christian 'festive' symbol from 1500's Germany that was brought to America by German settlers in Pennsylvania.",    
+    "https://live.staticflickr.com/65535/50721922928_22a42e675a_b.jpg;https://live.staticflickr.com/65535/50721922928_22a42e675a_m.jpg;References 3;Various photos of deserts for reference/ideas.",
+    "https://live.staticflickr.com/65535/50722661431_99e5670584_b.jpg;https://live.staticflickr.com/65535/50722661431_99e5670584_m.jpg;References 4;Various photos/paintings of more nativity/shepherd scenes. For the record my original idea, and initial sketch, had a more obvious sense of fear/alarm in them - sadly I think that mostly got lost in the final card image.",
+    "https://live.staticflickr.com/65535/50721992128_4137b64eea_b.jpg;https://live.staticflickr.com/65535/50721992128_4137b64eea_m.jpg;References 5;Since I'm not a professional human body illustrator I used a 3D program to help me get general body positions at least in the ballpark of being accurate.",    
+    "https://live.staticflickr.com/65535/50722896002_ea4186900b_b.jpg;https://live.staticflickr.com/65535/50722896002_ea4186900b_m.jpg;Brainstorming;Some interesting ideas in my initial brainstorming. The middle/left was a series of 4 vertical images of close-ups of Jesus' hand/arm throughout his life - but it didn't have enough of a Christmas/birth focus so I didn't go with that.",
+    "https://live.staticflickr.com/65535/50722069918_3b8a459255_b.jpg;https://live.staticflickr.com/65535/50722069918_3b8a459255_m.jpg;Sketch Idea (1);This was an attempt to go with a simple 'man sitting in a 1500s German house at Christmas' (after learning of the Christmas tree's likely origin in Germany) but I just wasn't feeling it/felt forced.",
+    "https://live.staticflickr.com/65535/50721925403_3bd8d17e3d_b.jpg;https://live.staticflickr.com/65535/50721925403_3bd8d17e3d_m.jpg;Initial Sketch;Original sketch of the final card idea. As mentioned I think the position of the people and the coloring had a much stronger sense of fear which I liked. My apologies that I lost that in the final card. If I had more time I'd have likely reworked it to get this vibe back into the image.",
+    "https://live.staticflickr.com/65535/50722832667_5fd3118bb2_b.jpg;https://live.staticflickr.com/65535/50722832667_5fd3118bb2_m.jpg;File Info;Details from the painting file on my iPad.",
+    "https://live.staticflickr.com/65535/50722745647_41ce424a42_b.jpg;https://live.staticflickr.com/65535/50722745647_41ce424a42_m.jpg;Final Image;Christmas Card 2020",
+    "https://live.staticflickr.com/65535/50722743132_a457156ac4_b.jpg;https://live.staticflickr.com/65535/50722743132_a457156ac4_m.jpg;Luke 2:8-11;",
+    "videos/2020-short.htm;https://live.staticflickr.com/65535/50722088818_44138fb642_n.jpg;Time Lapse Video;30 second version",
+    "videos/2020-long.htm;https://live.staticflickr.com/65535/50722088818_44138fb642_n.jpg;Time Lapse Video;22 minute version!!"
+    ];
+
+  // var urlKeyPresent = (document.location.search.toUpperCase().indexOf('TEST=1',0) > -1);
+  // if(!urlKeyPresent) $('body').html("");
+
+</script>
+
+
+
+
+</body>
+</html>

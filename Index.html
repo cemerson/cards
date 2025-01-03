@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- return after google clear 20200615 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GREETING CARDS @ chris-emerson.com</title>
+    <link rel="stylesheet" href="_css/flickr.css?20241213073954" />
+    <link rel="stylesheet" href="_css/cards.css?20241213073954" />
+</head>
+<body>
+<!-- DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd -->
+
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4294942-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <div id="header">
+        <h1>Greeting Cards</h1>
+        <h2>by Chris Emerson</h2>  
+    </div>
+
+    <div id="pagecontainer">
+
+        <div id="pagebody" class="row">
+            <div class="arrowprev"><img src="images/arrow_left.png"></div>
+            <div class="arrownext" style="left: auto;   right: 10px;"><img src="images/arrow_right.png"></div>
+            <div id="wrapper"> 
+                <div id="cards"> 
+                    <ul>
+                        <li class="cardtitle card_2024 current_year" year="2024"><div class="image"></div><label>Christmas 2024</label></li>  
+                        <li class="cardtitle card_2023 " year="2023"><div class="image"></div><label>Christmas 2023</label></li>  
+                        <li class="cardtitle card_2022" year="2022"><div class="image"></div><label>Christmas 2022</label></li> 
+                        <li class="cardtitle card_2021" year="2021"><div class="image"></div><label>Christmas 2021</label></li> 
+                        <li class="cardtitle card_2020" year="2020"><div class="image"></div><label>Christmas 2020</label></li>
+                        <li class="cardtitle card_2019" year="2019"><div class="image"></div><label>Christmas 2019</label></li>
+                        <li class="cardtitle card_2018" year="2018"><div class="image"></div><label>Christmas 2018</label></li>
+                        <li class="cardtitle card_2017" year="2017"><div class="image"></div><label>Christmas 2017</label></li>
+                        <li class="cardtitle card_2016" year="2016"><div class="image"></div><label>Christmas 2016</label></li>
+                        <li class="cardtitle card_2015" year="2015"><div class="image"></div><label>Christmas 2015</label></li>
+                        <li class="cardtitle card_2014" year="2014"><div class="image"></div><label>Christmas 2014</label></li>
+                        <li class="cardtitle card_2013" year="2013"><div class="image"></div><label>Christmas 2013</label></li>
+                        <li class="cardtitle card_2012" year="2012"><div class="image"></div><label>Christmas 2012</label></li>
+                        <li class="cardtitle card_2011" year="2011"><div class="image"></div><label>Christmas 2011</label></li>
+                        <li class="cardtitle card_2010" year="2010"><div class="image"></div><label>Christmas 2010</label></li>
+                        <li class="cardtitle card_2009" year="2009"><div class="image"></div><label>Christmas 2009</label></li>
+                        <li class="cardtitle card_2008" year="2008"><div class="image"></div><label>Christmas 2008</label></li>
+                        <li class="cardtitle card_2007" year="2007"><div class="image"></div><label>Christmas 2007</label></li>
+                        <li class="cardtitle card_2006" year="2006"><div class="image"></div><label>Christmas 2006</label></li>
+                        <li class="cardtitle card_2005" year="2005"><div class="image"></div><label>Christmas 2005</label></li>
+                        <li class="cardtitle card_2004" year="2004"><div class="image"></div><label>Christmas 2004</label></li>
+                        <li class="cardtitle card_2003" year="2003"><div class="image"></div><label>Christmas 2003</label></li>
+                        <li class="cardtitle card_2002" year="2002"><div class="image"></div><label>Christmas 2002</label></li>
+                        <li class="cardtitle card_2001" year="2001"><div class="image"></div><label>Christmas 2001</label></li>
+                        <li class="cardtitle card_2000" year="2000"><div class="image"></div><label>Christmas 2000</label></li>
+                        <li class="cardtitle card_1999" year="1999"><div class="image"></div><label>Christmas 1999</label></li>
+                        <li class="cardtitle card_1998" year="1998"><div class="image"></div><label>Christmas 1998</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+    <!-- <div id="instructions">Click on a card above to see fullsize images,<br>original sketches and notes</div> -->
+    All cards &copy; <a href='mailto:emersondesigninc+cards@gmail.com' target='_blank'>Emerson Design</a> <script>var d = new Date();document.write(' ' + d.getFullYear());</script>
+    </div>
+
+<script language="javascript" src="js/jquery.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+
+    function popupcard(y) {
+
+        if($('body').hasClass('list_scrolling_active')){
+            return false;
+        }
+
+        var cardPage = y + '.htm';
+        var safeToOpen = true;
+
+        var d = new Date();
+        var currentYear = d.getFullYear();
+        var currentMonth = d.getMonth()+1;
+        var currentDay = d.getDate();
+
+
+        var showCard = true;
+
+        // if(y == currentYear){
+
+        //     if((currentMonth <= 12 && currentDay < 15)){
+        //         alert('Sorry this card hasn\'t been shipped yet!');
+        //         showCard = false;   
+        //     }else if((currentMonth <= 12 && currentDay < 22)){
+        //         if (!confirm('Are you sure you want to view this year\'s new card?! \n\nIf you\'re getting one in the mail I recommend you hit [Cancel] and wait for that first!')) {showCard = false;
+        //         }  
+        //     }
+        // }
+
+
+        if(showCard){           
+            msg = open(cardPage, "popupcard", "toolbar=no,directories=no,menubar=no,scrollbars=no,resizable=yes,status=no,fullscreen=yes,width=1280,height=980");
+        }
+
+
+        // if(y == currentYear){
+        //     if(y == currentYear && (currentMonth <= 12 && currentDay < 18)){
+        //         alert('Sorry this card hasn\'t shipped yet!');
+        //         safeToOpen = false;                
+        //     }
+
+        //     // if (!confirm('Are you sure you want to view this year\'s new card?! \n\nIf you\'re getting one in the mail I recommend you hit [Cancel] and wait for that first!')) {
+        //     //     safeToOpen = false;
+        //     // }
+        //     // alert('card not ready yet!');
+        // }
+        // if(safeToOpen){
+        //     msg = open(cardPage, "popupcard", "toolbar=no,directories=no,menubar=no,scrollbars=no,resizable=no,status=no,fullscreen=yes,width=1024,height=768");
+        // }
+    }
+
+    function closeCard () {
+        $('#card').html('').addClass('minimized');
+    }
+
+    var clickOrTouchEvent  = "click";
+
+    var loadingYear = 2022;
+
+    $(document).ready(function(){
+
+        $('.current_year').append('<span class="warning">This Year&apos;s Card!</span>');
+        // <small>(Don&apos;t look yet if you&apos;re getting a paper version in the mail!)</small>
+
+        if(window.touch) clickOrTouchEvent = 'touchstart';
+
+
+        $('.arrownext').bind(clickOrTouchEvent,function(){
+
+            scrollingCards.next();
+        });
+        $('.arrowprev').bind(clickOrTouchEvent,function(){
+            scrollingCards.prev();
+        });
+        $('#header').bind(clickOrTouchEvent,function(){
+            scrollingCards.goToPage(0,0);
+        });
+
+        var cardCount = $('#cards li').length;
+        var cardListLengthWidth = (cardCount+1) * $('.card_2010').width(); //20000; //
+        $('#cards').css('width',cardListLengthWidth + 'px');
+        console.log('setting card list to width ['+ cardListLengthWidth + 'px] for [' + cardCount + '] cards');
+
+        initCardScrolling();
+
+        // setup click events on carousel
+        $('.cardtitle').each(function(){
+            $(this).bind(clickOrTouchEvent,function(){
+                var thisYear = $(this).attr('year');
+                popupcard(thisYear);
+            });
+        });
+
+        loadNextCardCarouselImg();
+
+
+
+        // var disqus_shortname = 'ce-xmas-2012'; // required: replace example with your forum shortname
+
+        // /* * * DON'T EDIT BELOW THIS LINE * * */
+        // (function () {
+        //     var s = document.createElement('script'); s.async = true;
+        //     s.type = 'text/javascript';
+        //     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        //     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        // }());
+
+
+
+
+    });
+
+
+    function loadNextCardCarouselImg(){
+        var y = loadingYear;
+        var nextYearImg = 'images/' + y + '/_' + y + '.png';
+        console.log('...loading carousel image for [' + y + '] (' + nextYearImg + ')');
+        $('<img/>').attr('src', nextYearImg).load(function() {
+           $(this).remove();
+           $('.card_' + y + ' .image').css({'background-image':'url(' + nextYearImg + ')'});
+           // run callback after loading finished if desired
+           if(loadingYear > 1998){
+            loadingYear --;
+            loadNextCardCarouselImg();
+           }
+        });
+    }
+ 
+    var scrollingCards;
+    /* ------------------------------- */
+    function initCardScrolling(){
+
+        try{
+
+            // scroll list if active
+            if(typeof(scrollingCards) == 'object') scrollingCards.destroy();
+            // scrollingCards = new IScroll('.page.active div.scrolling', { mouseWheel: true });
+
+
+          scrollingCards = new IScroll("#wrapper",{
+            eventPassthrough: true,
+            scrollX: true,
+            scrollY: false,
+            snap:$('.cardtitle'), //#cards li'),
+            desktopCompatibility:false,
+            bounce: true,
+            scrollbars: false,
+            mouseWheel: true,
+            momentum: false,
+            fadeScrollbar:true
+          });
+
+        scrollingCards.on('scrollEnd', function(){
+            $('body').removeClass('list_scrolling_active');
+        });
+        scrollingCards.on('scrollStart', function(){
+            $('body').addClass('list_scrolling_active');
+        });
+ 
+        if(screen.height <= 600){
+            setTimeout(function() {
+                window.scrollTo(0, 1);
+            }, 1500);
+        }
+
+
+        }catch(e){ console.log('initCardScrolling() ERROR [' + e.message + ']'); }
+
+    }
+
+</script>
+
+
+
+</body></html>
