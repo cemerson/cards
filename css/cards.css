@@ -379,22 +379,6 @@ div#footer a, div#footer a:hover, div#footer a:visited{
     background-image:url(../images/cover.png) !important;
 } 
 
-/* Thumbnail fix: 2019-2025 carousel tiles (2026-11-14).
-   The JS loader in index.html only looks for local images/<year>/_<year>.png,
-   and images/ stops at 2018, so these tiles were blank. Each URL below is the
-   exact cardImgURL from that year's .htm page (the same image the year page shows).
-   !important is needed: .cardtitle.current_year .image sets cover.png !important,
-   and the loader never sets an inline image for these years because the local
-   file load fails. Years <=2018 are untouched - the loader still sets them. */
-.card_2019 .image{background-image:url(https://live.staticflickr.com/65535/49157705413_11cf16076c_b.jpg) !important;}
-.card_2020 .image{background-image:url(https://live.staticflickr.com/65535/50722745647_41ce424a42_b.jpg) !important;}
-.card_2021 .image{background-image:url(https://live.staticflickr.com/65535/51742220920_15118a4cda_b.jpg) !important;}
-.card_2022 .image{background-image:url(https://live.staticflickr.com/65535/52567288053_07df3a9002_b.jpg) !important;}
-.card_2023 .image{background-image:url(https://live.staticflickr.com/65535/53401973675_b9f07c7cb6_b.jpg) !important;}
-.card_2024 .image{background-image:url(https://live.staticflickr.com/65535/54200364361_7d9042a65d_b.jpg) !important;}
-.card_2025 .image{background-image:url(https://live.staticflickr.com/65535/54985714218_e672f8bd01_b.jpg) !important;}
-
-
 /*.card_2015 .image{background-image:url(../images/2015/_2015.png);}*/
 /*.card_2019 .image{background-image:url(https://live.staticflickr.com/65535/49158450498_14016870fe_b.png);} */
 /*.card_2020 .image{background-image:url(https://live.staticflickr.com/65535/50722763657_5213b24296_o.png);}*/
